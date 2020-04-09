@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="education.cpp">
+    <ClCompile Include="floatnum.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="floatnum.cpp">
+    <ClCompile Include="typecast.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

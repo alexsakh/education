@@ -1,6 +1,6 @@
-#include <iostream>
-
-int main() {
+#include <iostream>;
+int floatnum() {
+	
 	using namespace std;
 	cout.setf(ios_base::fixed, ios_base::floatfield);
 
