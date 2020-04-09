@@ -25,7 +25,5 @@ int main() {
 	cout << "float constants: 1e7f/9.0f = ";
 	cout << 1.e7f / 9.0f << endl;
 
-
-
 	return 0;
 }
