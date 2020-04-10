@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-int main() {
+int typecast() {
 	using namespace std;
 
 	cout << "#TYPECAST# 3.14" << endl;
@@ -17,4 +17,5 @@ int main() {
 	cout << "Yes, the code is ";
 	cout << static_cast<int>(ch) << endl;
 	return 0;
+
 }
