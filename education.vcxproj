@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="programming_3.cpp" />
     <ClCompile Include="selfcontrol_3.cpp" />
     <ClCompile Include="typecast.cpp" />
     <ClCompile Include="floatnum.cpp" />
