@@ -41,5 +41,33 @@ int main() {
 	cout << deg << " degress, " << min << " minutes, " << sec << " seconds = " <<
 		findeg << " degress" << endl;
 
+	cout << "#Exercise 4#" << endl;
+	const int secinmin = 60;
+	const int mininhour = 60;
+	const int hourinday = 24;
+	const int dayinyear = 365;
+	cout << "Enter the number of seconds: ____________\b\b\b\b\b\b\b\b\b\b\b\b";
+	long long total_sec;
+	cin >> total_sec;
+	int ResDays = total_sec / long long (secinmin * mininhour * hourinday);
+	long long RedSec = total_sec % long long(secinmin * mininhour * hourinday);
+	int ResHours = RedSec / long long(secinmin * mininhour);
+	RedSec = RedSec % long long(secinmin * mininhour);
+	int ResMins = RedSec / secinmin;
+	RedSec = RedSec % secinmin;
+	cout << total_sec << " seconds = " << ResDays << " days, "
+		<< ResHours << " hours, " << ResMins << " minutes, " << RedSec << " seconds";
+
+	cout << "#Exercise 5#" << endl;
+	cout.setf(ios_base::fixed, ios_base::floatfield);
+	cout.precision(5);
+	cout << "Enter the worlds's population: ________\b\b\b\b\b\b\b\b";
+	long long WorPop, CouPop;
+	cin >> WorPop;
+	cout << "Enter the population of the your country: ________\b\b\b\b\b\b\b\b";
+	cin >> CouPop;
+	long double PerPop = CouPop * 100 / long double (WorPop);
+	cout << "The population of the your country is " << PerPop << "% of the world population." << endl;
+
 	return 0;
 }
