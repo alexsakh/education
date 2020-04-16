@@ -1,7 +1,7 @@
 #include <iostream>
 #include <locale.h>
 
-int main() {
+int programming_3() {
 	using namespace std;
 	setlocale(LC_ALL, "RUS");
 
@@ -17,7 +17,7 @@ int main() {
 
 	cout << "#Exercise 2#" << endl;
 	const double inme = 0.0254;
-	const float pokg = 2.2;
+	const double pokg = 2.2;
 	cout << "enter your weights in pounds: ____\b\b\b\b";
 	double weights;
 	cin >> weights;
@@ -44,18 +44,18 @@ int main() {
 		findeg << " degress" << endl;
 
 	cout << "#Exercise 4#" << endl;
-	const int secinmin = 60;
+	//const int secinmin = 60;
 	const int mininhour = 60;
 	const int hourinday = 24;
 	const int dayinyear = 365;
 	cout << "Enter the number of seconds: ____________\b\b\b\b\b\b\b\b\b\b\b\b";
 	long long total_sec;
 	cin >> total_sec;
-	int ResDays = total_sec / long long (secinmin * mininhour * hourinday);
+	long long ResDays = total_sec / long long (secinmin * mininhour * hourinday);
 	long long RedSec = total_sec % long long(secinmin * mininhour * hourinday);
-	int ResHours = RedSec / long long(secinmin * mininhour);
+	long long ResHours = RedSec / long long(secinmin * mininhour);
 	RedSec = RedSec % long long(secinmin * mininhour);
-	int ResMins = RedSec / secinmin;
+	long long ResMins = RedSec / secinmin;
 	RedSec = RedSec % secinmin;
 	cout << total_sec << " seconds = " << ResDays << " days, "
 		<< ResHours << " hours, " << ResMins << " minutes, " << RedSec << " seconds";
