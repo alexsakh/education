@@ -1,7 +1,9 @@
 #include <iostream>
+#include <locale.h>
 
 int main() {
 	using namespace std;
+	setlocale(LC_ALL, "RUS");
 
 
 	cout << "#Exercise 1#" << endl;
@@ -68,6 +70,22 @@ int main() {
 	cin >> CouPop;
 	long double PerPop = CouPop * 100 / long double (WorPop);
 	cout << "The population of the your country is " << PerPop << "% of the world population." << endl;
+
+	cout << "#Exercise 6#" << endl;
+	cout << "¬ведите количество миль пройденных автомобилем: ____\b\b\b\b";
+	double CountMile, CountGal;
+	cin >> CountMile;
+	cout << "¬ведите количество галлонов израсходованного бензина: ____\b\b\b\b";
+	cin >> CountGal;
+	cout << "»того, количество миль на галлон: " << CountMile / CountGal << endl;
+
+	cout << "#Exercise 7#" << endl;
+	cout << "¬ведите расход бензина, л /100 км: ____\b\b\b\b";
+	const double galL = 3.875;
+	const double mileKm = 0.6214;
+	double CountL;
+	cin >> CountL;
+	cout << "»того, число миль на галлон: " << 100*galL*mileKm/CountL << endl;
 
 	return 0;
 }
